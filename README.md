@@ -39,21 +39,20 @@ By automating those parts, this package makes it easier to implement sharing.
 ```ts
 import shareWebPage, { TypeOfSharing } from "web-sharing"
 
+const APP_NAME = "My Web App"
+const HOMEPAGE_URL = "https://google.com"
+const onFail = () => alert("The share failed.")
+
+const onSuccess = (typeofSharing: TypeOfSharing) => {
+  if (typeofSharing.APP) {
+    alert("Shared successfully.")
+  } else {
+    // The browser does not support sharing.
+    alert("Web address copied successfully.")
+  }
+}
 
 const ShareButton: React.FC = () => {
-  const APP_NAME = "My Web App"
-  const HOMEPAGE_URL = "https://google.com"
-  const onFail = () => alert("The share failed.")
-
-  const onSuccess = (typeofSharing: TypeOfSharing) => {
-    if (typeofSharing.APP) {
-      alert("Shared successfully.")
-    } else {
-      // The browser does not support sharing.
-      alert("Web address copied successfully.")
-    }
-  }
-
   return (
     <div>
       <button
