@@ -1,6 +1,6 @@
 {
   "name": "web-sharing",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Web Content Sharing JavaScript Package for the Web.",
   "scripts": {
     "tsc": "tsc",
