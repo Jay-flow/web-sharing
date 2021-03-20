@@ -41,6 +41,8 @@ import shareWebPage, { TypeOfSharing } from "web-sharing"
 
 
 const ShareButton: React.FC = () => {
+  const APP_NAME = "My Web App"
+  const HOMEPAGE_URL = "https://google.com"
   const onFail = () => alert("The share failed.")
 
   const onSuccess = (typeofSharing: TypeOfSharing) => {
@@ -58,8 +60,8 @@ const ShareButton: React.FC = () => {
         onClick={() =>
           shareWebPage(
             {
-              title: ${APP_NAME},
-              url: ${HOMEPAGE_URL},
+              title: APP_NAME,
+              url: HOMEPAGE_URL,
               copyValue: `Welcome! ${HOMEPAGE_URL}`
             },
             onSuccess,
