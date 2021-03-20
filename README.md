@@ -10,7 +10,7 @@
 - [Requirements](https://github.com/Jay-flow/web-sharing#requirements)
 - [Usage](https://github.com/Jay-flow/web-sharing#usage)
 - [Preview](https://github.com/Jay-flow/web-sharing#preview)
-
+- [Contributing to web-sharing](https://github.com/Jay-flow/web-sharing#contributing-to-web-sharing)
 
 ## About web-sharing
 
